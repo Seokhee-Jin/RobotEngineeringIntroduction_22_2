@@ -141,4 +141,4 @@ if __name__ == "__main__":
     # Converters.before_after_test(image1, Converters.convert_to_lane_detected)
 
     """ final video writing test """
-    write_lane_detected_video(video_filename="line_following.mp4", save_filename="line_detected.mp4")
+    write_lane_detected_video(video_filename="line_following.mp4", save_filename="lane_detected.mp4")
