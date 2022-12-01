@@ -103,7 +103,7 @@ class Converters:
         return lane_detected_img
 
 
-def write_lane_detected_video(video_filename, save_filename):
+def write_lane_detected_video(video_filename: str, save_filename: str):
 
     cap = cv2.VideoCapture(video_filename)
     fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
@@ -141,4 +141,4 @@ if __name__ == "__main__":
     # Converters.before_after_test(image1, Converters.convert_to_lane_detected)
 
     """ final video writing test """
-    write_lane_detected_video("line_following.mp4", "line_detected.mp4")
+    write_lane_detected_video(video_filename="line_following.mp4", save_filename="line_detected.mp4")
